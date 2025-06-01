@@ -26,6 +26,10 @@ public class ProductService {
         return productRepository.findByCategory(category);
     }
 
+    public List<Product> getByProductName(String productName) {
+        return productRepository.findByProductName(productName);
+    }
+
     public Product createProduct(Product product) {
         return productRepository.save(product);
     }
